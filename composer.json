@@ -1,5 +1,5 @@
 {
-    "name": "silverstripe/installer",
+    "name": "devyaka/devyakasite",
     "type": "silverstripe-recipe",
     "description": "The SilverStripe Framework Installer",
     "require": {
@@ -12,6 +12,15 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevYaka\\Main\\": "app/src/"
+        },
+        "classmap": [
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ]
     },
     "extra": {
         "project-files-installed": [
